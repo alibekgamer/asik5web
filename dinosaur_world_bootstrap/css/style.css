@@ -1,0 +1,31 @@
+/* Only theme colors and fixed sizes. All spacing uses Bootstrap utilities. */
+.hero-dino { width: 280px; height: 280px; font-size: 9rem; background: #d9e5c6; }
+.tile { height: 190px; font-size: 4.5rem; }
+.tile.slide { height: 340px; font-size: 9rem; }
+.tile.thumb { height: 140px; font-size: 3.5rem; }
+.t1 { background: #e2c5a1; } .t2 { background: #c6d8ad; } .t3 { background: #d9c5b5; }
+.t4 { background: #b9d8d0; } .t5 { background: #d9e5c6; } .t6 { background: #f0d9a1; }
+.t7 { background: #cbb9d8; } .t8 { background: #b9c9d8; } .t9 { background: #d8c9b9; }
+.carousel-caption { bottom: 2.5rem; }
+@media (max-width: 575.98px) { .hero-dino { width: 200px; height: 200px; font-size: 6rem; } .tile.slide { height: 240px; font-size: 6rem; } }
+
+/* Assignment 4 interactive features */
+body { transition: background-color .35s ease; }
+.faq-answer {max-height:0;overflow:hidden;opacity:0;transition:max-height .35s ease,opacity .35s ease;}
+.faq-answer.faq-open {max-height:240px;opacity:1;}
+.faq-question {width:100%;text-align:left;border:0;background:#e8f5e9;padding:16px;font-weight:700;border-radius:8px;}
+.faq-item {margin-bottom:12px;}
+.faq-answer p {padding:12px 16px;margin:0;}
+.popup-overlay[hidden] {display:none;}
+.popup-overlay {position:fixed;inset:0;background:rgba(0,0,0,.6);z-index:2000;display:flex;align-items:center;justify-content:center;padding:20px;}
+.popup-box {background:white;border-radius:14px;padding:26px;width:min(100%,440px);box-shadow:0 16px 40px #0003;}
+.modal-active {overflow:hidden;}
+
+/* Assignment 5: shared interactive UI */
+.a5-toolbar,.a5-panel{background:#fff;border:1px solid #d8e7dc;border-radius:18px;padding:22px;box-shadow:0 8px 25px rgba(16,74,38,.07)}
+.a5-panel{max-width:860px;margin:auto;padding:32px}.a5-eyebrow{font-size:.75rem;letter-spacing:.16em;color:#218653;font-weight:800}.a5-result{border-left:4px solid #269b5a;background:#edf8f0;padding:16px;border-radius:8px;transition:transform .25s}.a5-result.a5-pop{transform:scale(1.025)}
+.a5-stars{display:flex;gap:7px}.a5-stars button{font-size:2.4rem;background:none;border:0;color:#8a968d;line-height:1.2;cursor:pointer}.a5-stars button.selected{color:#dba400}.a5-stars button:focus-visible{outline:2px solid #16803f;border-radius:5px}
+body.a5-dark{background:#101b18!important;color:#e6f3e9!important}body.a5-dark .a5-toolbar,body.a5-dark .a5-panel,body.a5-dark .card,body.a5-dark .popup-box{background:#1c2c26;color:#edf8f0;border-color:#3a5948}body.a5-dark .a5-result{background:#294538;color:#f0fff2}body.a5-dark .bg-success-subtle{background:#234334!important;color:#f1fff2!important}body.a5-dark .bg-white{background:#1c2c26!important}body.a5-dark .faq-question{background:#2d493a;color:#fff}body.a5-dark .text-muted{color:#d2dcd5!important}
+@media(max-width:600px){.a5-panel{padding:20px}.a5-toolbar{padding:16px}}
+
+.a5-dino-card[hidden],.a5-step[hidden],#extraInfo[hidden]{display:none!important}

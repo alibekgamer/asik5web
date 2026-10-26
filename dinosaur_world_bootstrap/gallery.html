@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dinosaur World - Gallery</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-body-tertiary">
+<a class="visually-hidden-focusable" href="#main">Skip to content</a>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top" aria-label="Main navigation">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-warning" href="index.html">🦖 Dinosaur World</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0"><li class="nav-item"><a class="nav-link" href="index.html">Home</a></li><li class="nav-item"><a class="nav-link" href="dinosaurs.html">Dinosaurs</a></li><li class="nav-item"><a class="nav-link" href="facts.html">Facts</a></li><li class="nav-item"><a class="nav-link active text-warning" href="gallery.html" aria-current="page">Gallery</a></li><li class="nav-item"><a class="nav-link" href="responsive.html">Media Queries</a></li><li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li></ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<section class="container py-4" aria-label="Assignment 5 controls"><div class="d-flex align-items-center justify-content-between flex-wrap gap-3 a5-toolbar"><div><strong>🦕 Explorer controls</strong><div class="small">Use ← → to navigate the menu · Press D for day/night</div></div><div class="d-flex gap-2"><button type="button" id="themeToggle" class="btn btn-outline-success">🌙 Night mode</button><button type="button" id="soundToggle" class="btn btn-outline-secondary" aria-pressed="true">🔊 Sound on</button></div></div></section>
+<main id="main">
+    <section class="bg-success-subtle text-center py-5 px-3">
+        <p class="text-warning-emphasis fw-bold small mb-1">PICTURE BOOK</p>
+        <h1 class="display-5 fw-bold">Dinosaur Gallery</h1>
+        <p class="lead mb-0">A quick visual look at nine dinosaurs.</p>
+    </section>
+
+    <section class="container py-5">
+        <div class="row g-4">
+            <aside class="col-12 col-lg-3">
+                <h2 class="h5">Jump To</h2>
+                <div class="list-group mb-3">
+                    <a class="list-group-item list-group-item-action" href="#slider">Carousel</a>
+                    <a class="list-group-item list-group-item-action" href="#thumbs">All dinosaurs</a>
+                </div>
+                <div class="alert alert-success mb-0" role="note"><strong>Did you know?</strong> Use the arrows or dots to browse all nine dinosaurs.</div>
+            </aside>
+            <div class="col-12 col-lg-9" id="slider">
+                <div id="dinoCarousel" class="carousel slide" data-bs-ride="carousel" aria-label="Dinosaur carousel">
+                    <div class="carousel-indicators"><button type="button" data-bs-target="#dinoCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button><button type="button" data-bs-target="#dinoCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button><button type="button" data-bs-target="#dinoCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button><button type="button" data-bs-target="#dinoCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button><button type="button" data-bs-target="#dinoCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button><button type="button" data-bs-target="#dinoCarousel" data-bs-slide-to="5" aria-label="Slide 6"></button><button type="button" data-bs-target="#dinoCarousel" data-bs-slide-to="6" aria-label="Slide 7"></button><button type="button" data-bs-target="#dinoCarousel" data-bs-slide-to="7" aria-label="Slide 8"></button><button type="button" data-bs-target="#dinoCarousel" data-bs-slide-to="8" aria-label="Slide 9"></button></div>
+                    <div class="carousel-inner rounded">
+                <div class="carousel-item active">
+                    <div class="tile t1 slide d-flex align-items-center justify-content-center" role="img" aria-label="Tyrannosaurus rex">🦖</div>
+                    <div class="carousel-caption d-block"><span class="bg-dark bg-opacity-75 rounded px-3 py-1">Tyrannosaurus rex</span></div>
+                </div>
+                <div class="carousel-item">
+                    <div class="tile t2 slide d-flex align-items-center justify-content-center" role="img" aria-label="Velociraptor">🦎</div>
+                    <div class="carousel-caption d-block"><span class="bg-dark bg-opacity-75 rounded px-3 py-1">Velociraptor</span></div>
+                </div>
+                <div class="carousel-item">
+                    <div class="tile t3 slide d-flex align-items-center justify-content-center" role="img" aria-label="Spinosaurus">🦂</div>
+                    <div class="carousel-caption d-block"><span class="bg-dark bg-opacity-75 rounded px-3 py-1">Spinosaurus</span></div>
+                </div>
+                <div class="carousel-item">
+                    <div class="tile t4 slide d-flex align-items-center justify-content-center" role="img" aria-label="Triceratops">🦏</div>
+                    <div class="carousel-caption d-block"><span class="bg-dark bg-opacity-75 rounded px-3 py-1">Triceratops</span></div>
+                </div>
+                <div class="carousel-item">
+                    <div class="tile t5 slide d-flex align-items-center justify-content-center" role="img" aria-label="Brachiosaurus">🦕</div>
+                    <div class="carousel-caption d-block"><span class="bg-dark bg-opacity-75 rounded px-3 py-1">Brachiosaurus</span></div>
+                </div>
+                <div class="carousel-item">
+                    <div class="tile t6 slide d-flex align-items-center justify-content-center" role="img" aria-label="Ankylosaurus">🐢</div>
+                    <div class="carousel-caption d-block"><span class="bg-dark bg-opacity-75 rounded px-3 py-1">Ankylosaurus</span></div>
+                </div>
+                <div class="carousel-item">
+                    <div class="tile t7 slide d-flex align-items-center justify-content-center" role="img" aria-label="Pteranodon">🦅</div>
+                    <div class="carousel-caption d-block"><span class="bg-dark bg-opacity-75 rounded px-3 py-1">Pteranodon</span></div>
+                </div>
+                <div class="carousel-item">
+                    <div class="tile t8 slide d-flex align-items-center justify-content-center" role="img" aria-label="Mosasaurus">🐊</div>
+                    <div class="carousel-caption d-block"><span class="bg-dark bg-opacity-75 rounded px-3 py-1">Mosasaurus</span></div>
+                </div>
+                <div class="carousel-item">
+                    <div class="tile t9 slide d-flex align-items-center justify-content-center" role="img" aria-label="Plesiosaurus">🐟</div>
+                    <div class="carousel-caption d-block"><span class="bg-dark bg-opacity-75 rounded px-3 py-1">Plesiosaurus</span></div>
+                </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#dinoCarousel" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="visually-hidden">Previous</span></button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#dinoCarousel" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="visually-hidden">Next</span></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container" id="thumbs">
+        <h2 class="mb-3">All Dinosaurs</h2>
+        <div class="row g-3">
+            <div class="col-6 col-md-4">
+                <div class="card text-center h-100"><div class="tile t1 thumb d-flex align-items-center justify-content-center card-img-top" role="img" aria-label="Tyrannosaurus rex">🦖</div>
+                <div class="card-body py-2"><p class="card-text small fw-bold mb-0">Tyrannosaurus rex</p></div></div>
+            </div>
+            <div class="col-6 col-md-4">
+                <div class="card text-center h-100"><div class="tile t2 thumb d-flex align-items-center justify-content-center card-img-top" role="img" aria-label="Velociraptor">🦎</div>
+                <div class="card-body py-2"><p class="card-text small fw-bold mb-0">Velociraptor</p></div></div>
+            </div>
+            <div class="col-6 col-md-4">
+                <div class="card text-center h-100"><div class="tile t3 thumb d-flex align-items-center justify-content-center card-img-top" role="img" aria-label="Spinosaurus">🦂</div>
+                <div class="card-body py-2"><p class="card-text small fw-bold mb-0">Spinosaurus</p></div></div>
+            </div>
+            <div class="col-6 col-md-4">
+                <div class="card text-center h-100"><div class="tile t4 thumb d-flex align-items-center justify-content-center card-img-top" role="img" aria-label="Triceratops">🦏</div>
+                <div class="card-body py-2"><p class="card-text small fw-bold mb-0">Triceratops</p></div></div>
+            </div>
+            <div class="col-6 col-md-4">
+                <div class="card text-center h-100"><div class="tile t5 thumb d-flex align-items-center justify-content-center card-img-top" role="img" aria-label="Brachiosaurus">🦕</div>
+                <div class="card-body py-2"><p class="card-text small fw-bold mb-0">Brachiosaurus</p></div></div>
+            </div>
+            <div class="col-6 col-md-4">
+                <div class="card text-center h-100"><div class="tile t6 thumb d-flex align-items-center justify-content-center card-img-top" role="img" aria-label="Ankylosaurus">🐢</div>
+                <div class="card-body py-2"><p class="card-text small fw-bold mb-0">Ankylosaurus</p></div></div>
+            </div>
+            <div class="col-6 col-md-4">
+                <div class="card text-center h-100"><div class="tile t7 thumb d-flex align-items-center justify-content-center card-img-top" role="img" aria-label="Pteranodon">🦅</div>
+                <div class="card-body py-2"><p class="card-text small fw-bold mb-0">Pteranodon</p></div></div>
+            </div>
+            <div class="col-6 col-md-4">
+                <div class="card text-center h-100"><div class="tile t8 thumb d-flex align-items-center justify-content-center card-img-top" role="img" aria-label="Mosasaurus">🐊</div>
+                <div class="card-body py-2"><p class="card-text small fw-bold mb-0">Mosasaurus</p></div></div>
+            </div>
+            <div class="col-6 col-md-4">
+                <div class="card text-center h-100"><div class="tile t9 thumb d-flex align-items-center justify-content-center card-img-top" role="img" aria-label="Plesiosaurus">🐟</div>
+                <div class="card-body py-2"><p class="card-text small fw-bold mb-0">Plesiosaurus</p></div></div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="bg-dark text-light text-center py-4 mt-5">
+    <p class="mb-1">Dinosaur World © 2026</p>
+    <p class="mb-0">Team members: Alibek</p>
+</footer>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/assignment4.js"></script>
+<script src="js/assignment5.js"></script>
+</body>
+</html>

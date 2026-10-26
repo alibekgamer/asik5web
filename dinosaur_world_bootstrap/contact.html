@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dinosaur World - Contact</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-body-tertiary">
+<a class="visually-hidden-focusable" href="#main">Skip to content</a>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top" aria-label="Main navigation">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-warning" href="index.html">🦖 Dinosaur World</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0"><li class="nav-item"><a class="nav-link" href="index.html">Home</a></li><li class="nav-item"><a class="nav-link" href="dinosaurs.html">Dinosaurs</a></li><li class="nav-item"><a class="nav-link" href="facts.html">Facts</a></li><li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li><li class="nav-item"><a class="nav-link" href="responsive.html">Media Queries</a></li><li class="nav-item"><a class="nav-link active text-warning" href="contact.html" aria-current="page">Contact</a></li></ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<section class="container py-4" aria-label="Assignment 5 controls"><div class="d-flex align-items-center justify-content-between flex-wrap gap-3 a5-toolbar"><div><strong>🦕 Explorer controls</strong><div class="small">Use ← → to navigate the menu · Press D for day/night</div></div><div class="d-flex gap-2"><button type="button" id="themeToggle" class="btn btn-outline-success">🌙 Night mode</button><button type="button" id="soundToggle" class="btn btn-outline-secondary" aria-pressed="true">🔊 Sound on</button></div></div></section>
+<main id="main">
+    <section class="bg-success-subtle text-center py-5 px-3">
+        <p class="text-warning-emphasis fw-bold small mb-1">GET IN TOUCH</p>
+        <h1 class="display-5 fw-bold">Contact Us</h1>
+        <p class="lead mb-0">Have a favorite dinosaur? Send us your message.</p>
+    </section>
+
+    <section class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-10 col-lg-8">
+                <form id="validatedForm" class="card card-body p-3 p-md-4 shadow-sm" novalidate>
+                    <div class="row g-3">
+                        <div class="col-12 col-md-6">
+                            <label for="name" class="form-label fw-bold">Name</label>
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Your name" required>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <label for="email" class="form-label fw-bold">Email</label>
+                            <div class="input-group">
+                                <span class="input-group-text" id="at">@</span>
+                                <input type="email" class="form-control" id="email" name="email" placeholder="your@email.com" aria-describedby="at" required>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6"><label for="password" class="form-label fw-bold">Password</label><input type="password" class="form-control" id="password" minlength="8" required></div><div class="col-12 col-md-6"><label for="confirmPassword" class="form-label fw-bold">Confirm Password</label><input type="password" class="form-control" id="confirmPassword" required></div><div class="col-12">
+                            <label for="dinosaur" class="form-label fw-bold">Favorite dinosaur</label>
+                            <select class="form-select" id="dinosaur" name="dinosaur">
+                                <option>Tyrannosaurus rex</option><option>Triceratops</option><option>Velociraptor</option><option>Brachiosaurus</option>
+                            </select>
+                        </div>
+                        <fieldset class="col-12">
+                            <legend class="form-label fw-bold fs-6">Choose a theme color</legend>
+                            <div class="form-check form-check-inline"><input class="form-check-input" type="radio" name="theme" id="forest" value="forest" checked><label class="form-check-label" for="forest">Forest</label></div>
+                            <div class="form-check form-check-inline"><input class="form-check-input" type="radio" name="theme" id="desert" value="desert"><label class="form-check-label" for="desert">Desert</label></div>
+                            <div class="form-check form-check-inline"><input class="form-check-input" type="radio" name="theme" id="ocean" value="ocean"><label class="form-check-label" for="ocean">Ocean</label></div>
+                        </fieldset>
+                        <div class="col-12">
+                            <label for="message" class="form-label fw-bold">Message</label>
+                            <textarea class="form-control" id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
+                        </div>
+                        <div class="col-12">
+                            <div class="form-check"><input class="form-check-input" type="checkbox" id="news"><label class="form-check-label" for="news">Send me dinosaur news</label></div>
+                        </div>
+                        <div class="col-12 d-grid d-sm-flex gap-2">
+                            <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+                            <button type="reset" class="btn btn-outline-secondary btn-lg">Reset</button>
+                        </div>
+                    </div>
+                <div id="formResult" role="status" aria-live="polite"></div></form>
+            </div>
+        </div>
+    </section>
+</main>
+<footer class="bg-dark text-light text-center py-4 mt-5">
+    <p class="mb-1">Dinosaur World © 2026</p>
+    <p class="mb-0">Team members: Alibek</p>
+</footer>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/assignment4.js"></script>
+<script src="js/assignment5.js"></script>
+</body>
+</html>

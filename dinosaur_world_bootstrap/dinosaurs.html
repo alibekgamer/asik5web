@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Dinosaur World - Dinosaurs</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-body-tertiary">
+<a class="visually-hidden-focusable" href="#main">Skip to content</a>
+<header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top" aria-label="Main navigation">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-warning" href="index.html">🦖 Dinosaur World</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0"><li class="nav-item"><a class="nav-link" href="index.html">Home</a></li><li class="nav-item"><a class="nav-link active text-warning" href="dinosaurs.html" aria-current="page">Dinosaurs</a></li><li class="nav-item"><a class="nav-link" href="facts.html">Facts</a></li><li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li><li class="nav-item"><a class="nav-link" href="responsive.html">Media Queries</a></li><li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li></ul>
+            </div>
+        </div>
+    </nav>
+</header>
+<section class="container py-4" aria-label="Assignment 5 controls"><div class="d-flex align-items-center justify-content-between flex-wrap gap-3 a5-toolbar"><div><strong>🦕 Explorer controls</strong><div class="small">Use ← → to navigate the menu · Press D for day/night</div></div><div class="d-flex gap-2"><button type="button" id="themeToggle" class="btn btn-outline-success">🌙 Night mode</button><button type="button" id="soundToggle" class="btn btn-outline-secondary" aria-pressed="true">🔊 Sound on</button></div></div></section>
+<main id="main">
+    <section class="bg-success-subtle text-center py-5 px-3">
+        <p class="text-warning-emphasis fw-bold small mb-1">PREHISTORIC GIANTS</p>
+        <h1 class="display-5 fw-bold">Famous Dinosaurs</h1>
+        <p class="lead mb-0">Here are some of the best-known dinosaurs from the prehistoric world.</p>
+    </section>
+
+<section class="container py-4"><div class="a5-panel"><h2 class="h4">Dinosaur explorer filter</h2><p>Filter dinosaur cards by diet using a JavaScript switch statement.</p><div class="d-flex gap-2 flex-wrap" id="dietFilters"><button class="btn btn-success active" data-diet="all">All</button><button class="btn btn-outline-success" data-diet="carnivore">Carnivores</button><button class="btn btn-outline-success" data-diet="herbivore">Herbivores</button></div><p id="filterCount" class="mt-3 mb-0" aria-live="polite"></p></div></section>
+    <section class="container py-5">
+        <div class="card-group">
+            <div class="card a5-dino-card" data-diet="carnivore">
+                <div class="tile t1 d-flex align-items-center justify-content-center card-img-top" role="img" aria-label="T-rex">🦖</div>
+                <div class="card-body">
+                    <h2 class="card-title h5">Tyrannosaurus rex</h2>
+                    <p class="card-text mb-2"><strong>Diet:</strong> Carnivore</p>
+                    <p class="card-text">T. rex was a large theropod dinosaur with powerful jaws and strong hind legs.</p>
+                </div>
+                <div class="card-footer bg-white"><a class="btn btn-outline-success btn-sm" href="contact.html">Vote favorite</a></div>
+            </div>
+            <div class="card a5-dino-card" data-diet="herbivore">
+                <div class="tile t2 d-flex align-items-center justify-content-center card-img-top" role="img" aria-label="Rhino">🦏</div>
+                <div class="card-body">
+                    <h2 class="card-title h5">Triceratops</h2>
+                    <p class="card-text mb-2"><strong>Diet:</strong> Herbivore</p>
+                    <p class="card-text">Triceratops had three horns and a large bony frill around its head.</p>
+                </div>
+                <div class="card-footer bg-white"><a class="btn btn-outline-success btn-sm" href="contact.html">Vote favorite</a></div>
+            </div>
+            <div class="card a5-dino-card" data-diet="carnivore">
+                <div class="tile t3 d-flex align-items-center justify-content-center card-img-top" role="img" aria-label="Lizard">🦎</div>
+                <div class="card-body">
+                    <h2 class="card-title h5">Velociraptor</h2>
+                    <p class="card-text mb-2"><strong>Diet:</strong> Carnivore</p>
+                    <p class="card-text">Velociraptor was a small, fast predator with a large curved claw on each foot.</p>
+                </div>
+                <div class="card-footer bg-white"><a class="btn btn-outline-success btn-sm" href="contact.html">Vote favorite</a></div>
+            </div>
+            <div class="card a5-dino-card" data-diet="herbivore">
+                <div class="tile t4 d-flex align-items-center justify-content-center card-img-top" role="img" aria-label="Sauropod">🦕</div>
+                <div class="card-body">
+                    <h2 class="card-title h5">Brachiosaurus</h2>
+                    <p class="card-text mb-2"><strong>Diet:</strong> Herbivore</p>
+                    <p class="card-text">Brachiosaurus was a huge long-necked dinosaur that could reach high vegetation.</p>
+                </div>
+                <div class="card-footer bg-white"><a class="btn btn-outline-success btn-sm" href="contact.html">Vote favorite</a></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container">
+        <h2 class="mb-3">Dinosaur Comparison</h2>
+        <div class="table-responsive">
+            <table class="table table-striped table-bordered bg-white mb-0">
+                <thead class="table-dark"><tr><th scope="col">Dinosaur</th><th scope="col">Diet</th><th scope="col">Main Feature</th><th scope="col">Type</th></tr></thead>
+                <tbody><tr><td>T. rex</td><td>Meat</td><td>Powerful jaws</td><td>Predator</td></tr><tr><td>Triceratops</td><td>Plants</td><td>Three horns</td><td>Herbivore</td></tr><tr><td>Velociraptor</td><td>Meat</td><td>Curved claw</td><td>Predator</td></tr><tr><td>Brachiosaurus</td><td>Plants</td><td>Long neck</td><td>Herbivore</td></tr></tbody>
+            </table>
+        </div>
+    </section>
+</main>
+<footer class="bg-dark text-light text-center py-4 mt-5">
+    <p class="mb-1">Dinosaur World © 2026</p>
+    <p class="mb-0">Team members: Alibek</p>
+</footer>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/assignment4.js"></script>
+<script src="js/assignment5.js"></script>
+</body>
+</html>
